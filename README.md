@@ -60,31 +60,25 @@ make create-project
 
 Visit [http://localhost:8989](http://localhost:8989) in your browser.
 
-### 4. Start the project containers
-
-```sh
-make up
-```
-
-### 5. Install project dependencies
+### 4. Install project dependencies
 
 ```sh
 composer install
 ```
 
-### 6. Generate the Laravel application key (if required)
+### 5. Generate the Laravel application key (if required)
 
 ```sh
 php artisan key:generate
 ```
 
-### 7. Run database migrations
+### 6. Run database migrations
 
 ```sh
 php artisan migrate
 ```
 
-### 8. Install the Laravel module package via Composer
+### 7. Install the Laravel module package via Composer
 
 ```sh
 composer require jamacio/module-laravel
@@ -93,6 +87,12 @@ composer require jamacio/module-laravel
 Learn more about the Laravel module: [https://github.com/jamacio/module-laravel](https://github.com/jamacio/module-laravel)
 
 ## Additional Commands
+
+- Start the containers:
+
+```sh
+make up
+```
 
 - Stop the containers:
 
